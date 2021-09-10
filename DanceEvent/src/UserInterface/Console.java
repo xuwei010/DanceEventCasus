@@ -1,10 +1,18 @@
+package UserInterface;
+
 import java.util.Scanner;
 
 public class Console {
     public static void main(String[] args) {
         boolean showMenu = true;
         while (showMenu) {
-            int selection = mainMenu();
+
+            int selection = 0;
+            try {
+                selection = mainMenu();
+            } catch (Exception ex) {
+                System.out.println("!! Use a number to choose a menu option please.");
+            }
 
             switch (selection) {
                 case 1:
@@ -44,6 +52,5 @@ public class Console {
         System.out.println("6) - Quit");
 
         return input.nextInt();
-
     }
 }
