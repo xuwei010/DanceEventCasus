@@ -14,15 +14,7 @@ public class SetService {
         return new Set(); // TODO: not implemented
     }
 
-    public void reviewSet() {
-        // TODO: not implemented
-    }
-
     public void updateSet() {
-        // TODO: not implemented
-    }
-
-    public void getSetReviews() {
         // TODO: not implemented
     }
 

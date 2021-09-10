@@ -1,7 +1,6 @@
 package Entity;
 
-public class Set implements java.io.Serializable {
-    private long id;
+public class Set extends BaseEntity implements java.io.Serializable {
     private String name;
     private String day;
     private String stage;
@@ -10,13 +9,6 @@ public class Set implements java.io.Serializable {
 
     public Set() {
 
-    }
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getName() {

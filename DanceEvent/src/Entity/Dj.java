@@ -1,20 +1,14 @@
 package Entity;
 
-public class Dj implements java.io.Serializable {
-    private long id;
+import java.io.Serializable;
+
+public class Dj extends BaseEntity implements Serializable {
+
     private String name;
     private int age;
     private String style;
 
     public Dj() {
-    }
-
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getName() {

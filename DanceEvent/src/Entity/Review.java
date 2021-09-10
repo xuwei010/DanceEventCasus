@@ -1,6 +1,6 @@
 package Entity;
 
-public class Review implements java.io.Serializable {
+public class Review extends BaseEntity implements java.io.Serializable {
     private long id;
     private long setId;
     private long rating;
@@ -8,13 +8,6 @@ public class Review implements java.io.Serializable {
 
     public Review() {
 
-    }
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
     }
 
     public long getSetId() {
